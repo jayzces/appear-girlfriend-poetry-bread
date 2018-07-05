@@ -1,28 +1,35 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>CS Hackathon</title>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>Gf Go</title>
+		<link rel="stylesheet" type="text/css" href="game.css">
+	</head>
+	<body>
+				<!-- Trigger/Open The Modal -->
+		<!-- <button id="myBtn">Open Modal</button> -->
 
-        <style>
-            body {
-                background-color: #F2F2F2;
-                display: flex;
-                align-items: center;
-                margin: 0;
-                padding: 0;
-                height: 100vh;
-            }
-            canvas {
-                background-color: #FFF;
-                display: block;
-                margin: 0 auto;
-                border: 2px solid #2196F3;
-            }
-        </style>
-    </head>
-    <body>
-        <canvas id="canvas" width="480" height="480"></canvas>
+		<!-- The Modal -->
+		<div id="myModal" class="modal">
 
-        <script src="script.js"></script>
-    </body>
+		 <!-- Modal content -->
+
+		<div class="modal-content">
+		  <div class="modal-header">
+		    <span class="close">×</span>
+		    <h2 id="head">A wild girl appeared!</h2>
+		  </div>
+		  <div class="modal-body">
+		  	<p id="stat"></p>
+		  	<div id="choice">
+			    <p>Choose your poison</p>
+			    <input type="button" value="poetry" name="poetry" onclick="getGirlfriend(0)">
+			    <input type="button" value="bread" name="bread" onclick="getGirlfriend(1)">
+			</div>
+		  </div>
+		</div>
+
+		</div>
+		<script src="js/game.js"></script>
+	</body>
 </html>
